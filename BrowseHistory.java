@@ -26,7 +26,7 @@ public class BrowseHistory {
   }
 
 /// nested class: separated from main class
-/// add another class to implement this interface, if further iterator is needed
+/// modify this class to implement this interface, if further change is needed
   public class ArrayIterator implements Iterator {
     private BrowseHistory history;
     /// default value is 0
@@ -53,13 +53,4 @@ public class BrowseHistory {
     }
   }
 
-  public class ListIterator implements Iterator {
-    private BrowseHistory history;
-    private int index;
-
-    @Override
-    public boolean hasNext(){
-      return(index < history.urls.);
-    }
-  }
 }
