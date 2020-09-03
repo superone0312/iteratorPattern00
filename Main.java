@@ -1,12 +1,12 @@
 class Main {
   public static void main(String[] args) {
-    var history = new BrowseHistory();
-    history.push("history entry 01");
-    history.push("history entry 02");
-    history.push("history entry 03");
+    var history = new BrowseHistory2();
+    history.push("history entry 21");
+    history.push("history entry 22");
+    history.push("history entry 23");
 
     Iterator iterator = history.createIterator();
-    /// a for loop
+    /// iterate elements
     while (iterator.hasNext()){
       var url = iterator.current();
       System.out.println(url);
